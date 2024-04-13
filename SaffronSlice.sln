@@ -11,13 +11,35 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaffronSlice.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaffronSlice.Api", "src\SaffronSlice.Api\SaffronSlice.Api.csproj", "{927E18AF-127E-48B4-A98A-C8240C71FBD6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82BFFB3C-6508-4839-AEB3-45E3332B3201}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{BAD9BF43-A636-432E-8227-4E67C60D4A43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pizza_place_sales_archive", "pizza_place_sales_archive", "{25ACF43E-3956-44E7-91F9-8CA66DDF7BC1}"
+	ProjectSection(SolutionItems) = preProject
+		data\pizza_place_sales_archive\order_details.csv = data\pizza_place_sales_archive\order_details.csv
+		data\pizza_place_sales_archive\orders.csv = data\pizza_place_sales_archive\orders.csv
+		data\pizza_place_sales_archive\pizza_types.csv = data\pizza_place_sales_archive\pizza_types.csv
+		data\pizza_place_sales_archive\pizzas.csv = data\pizza_place_sales_archive\pizzas.csv
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{08D95B30-0333-4069-84EE-376561CCEF6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaffronSlice.Tests", "tests\SaffronSlice.Tests\SaffronSlice.Tests.csproj", "{47C82D31-39E0-4FCC-BD11-4FA44A7E233C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F30C4CC9-D11A-4670-B176-F7D61EB5590F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -32,10 +54,20 @@ Global
 		{927E18AF-127E-48B4-A98A-C8240C71FBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{927E18AF-127E-48B4-A98A-C8240C71FBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{927E18AF-127E-48B4-A98A-C8240C71FBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C82D31-39E0-4FCC-BD11-4FA44A7E233C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C82D31-39E0-4FCC-BD11-4FA44A7E233C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C82D31-39E0-4FCC-BD11-4FA44A7E233C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C82D31-39E0-4FCC-BD11-4FA44A7E233C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F30C4CC9-D11A-4670-B176-F7D61EB5590F} = {5FE51145-D219-4261-8F11-67FEDA3E4ED3}
 		{6FEDDED1-BC11-40A0-A8F7-F87AFEE89439} = {5FE51145-D219-4261-8F11-67FEDA3E4ED3}
 		{927E18AF-127E-48B4-A98A-C8240C71FBD6} = {5FE51145-D219-4261-8F11-67FEDA3E4ED3}
+		{BAD9BF43-A636-432E-8227-4E67C60D4A43} = {82BFFB3C-6508-4839-AEB3-45E3332B3201}
+		{25ACF43E-3956-44E7-91F9-8CA66DDF7BC1} = {BAD9BF43-A636-432E-8227-4E67C60D4A43}
+		{47C82D31-39E0-4FCC-BD11-4FA44A7E233C} = {08D95B30-0333-4069-84EE-376561CCEF6E}
 	EndGlobalSection
 EndGlobal
