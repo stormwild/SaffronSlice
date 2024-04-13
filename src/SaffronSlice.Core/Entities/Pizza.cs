@@ -7,7 +7,7 @@ public enum PizzaSizeType
     L
 }
 
-public record PizzaSku(string Id);
+public record PizzaSku(string Value);
 public record PizzaSize(PizzaSizeType Size);
 
 public class Pizza

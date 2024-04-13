@@ -1,6 +1,6 @@
 ﻿namespace SaffronSlice.Core.Entities;
 
-public record OrderDetailId(int Id);
+public record OrderDetailId(int Value);
 
 public class OrderDetail
 {
